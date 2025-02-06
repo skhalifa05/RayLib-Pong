@@ -65,6 +65,10 @@ int main(void)
             DrawText("RayLib Bouncing Ball - Seif Khalifa!", 220, 200, 20, LIGHTGRAY);
             ball.draw(paddle);
             paddle.draw();
+            //Draw Lives
+            for (int i = 1; i<= ball.getLives(); i++) {
+                DrawCircle(800 - (20*i), 20,5,RED);
+            }
             DrawText(ball.getCounter().c_str(), 15, 20, 30, GRAY);
         EndDrawing();
         //----------------------------------------------------------------------------------

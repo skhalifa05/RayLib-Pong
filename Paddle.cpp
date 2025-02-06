@@ -12,8 +12,8 @@ Paddle::Paddle(float center) {
 }
 
 void Paddle::update() {
-    if (IsKeyDown(KEY_RIGHT)) x += 5.0f;
-    if (IsKeyDown(KEY_LEFT)) x -= 5.0f;
+    if (IsKeyDown(KEY_RIGHT)) x += 8.0f;
+    if (IsKeyDown(KEY_LEFT)) x -= 8.0f;
 
     // Screen wrapping logic
     if (x > GetScreenWidth()) x = 0;  // If the paddle exits the right side, re-enter from the left
@@ -21,7 +21,7 @@ void Paddle::update() {
 }
 
 void Paddle::draw() {
-    DrawRectangle(x, y, 70, 10, RED);
+    DrawRectangle(x, y, 70, 10, BLUE);
 }
 
 pair<float, float> Paddle::getLocation() {

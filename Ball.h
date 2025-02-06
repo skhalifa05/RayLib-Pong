@@ -16,6 +16,7 @@ class Ball {
         void draw(Paddle paddle);
         string getCounter();
         bool getColor();
+        int getLives();
 
     private:
         float x,y;
@@ -23,6 +24,7 @@ class Ball {
         float radius;
         int bounces = 0;
         bool color = 0;
+        int lives = 3;
 };
 
 

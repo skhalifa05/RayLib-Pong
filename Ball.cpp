@@ -34,8 +34,15 @@ void Ball::draw(Paddle paddle) {
     }
 
     // Check vertical boundaries
-    if (y >= height || y <= 0) {
+    if (y <= 0) {
         ySpeed *= -1;
+    }
+
+    if (y >= height) {
+        lives--;
+        if (lives <= 0) return;
+        x = GetScreenWidth() / 2;
+        y = GetScreenHeight()/3;
     }
 
     if (collision) {
@@ -57,4 +64,8 @@ string Ball::getCounter() {
 
 bool Ball::getColor() {
     return color;
+}
+
+int Ball::getLives() {
+    return lives;
 }
