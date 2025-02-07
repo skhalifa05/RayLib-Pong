@@ -7,8 +7,13 @@
 
 #include "Paddle.h"
 
-Ball::Ball(float x, float y, float xSpeed, float ySpeed, float radius)
-    : x(x), y(y), xSpeed(xSpeed), ySpeed(ySpeed), radius(radius) {}
+Ball::Ball() {
+    x = GetScreenWidth() / 2;
+    y = GetScreenHeight() / 2;
+    xSpeed = 1;
+    ySpeed = 1;
+    radius = 10;
+}
 
 
 void Ball::update() {
@@ -47,9 +52,19 @@ void Ball::draw(Paddle paddle) {
 
     if (collision) {
         color = 1 - color;
-        xSpeed *= -1;
-        ySpeed *= -1;
         bounces++;
+
+
+        // Normalize direction
+        float speedMultiplier = 1.15f; // Increase speed by 5% each bounce
+        float maxSpeed = 10.0f; // Prevent excessive speed
+
+        xSpeed *= -speedMultiplier;
+        ySpeed *= -speedMultiplier;
+
+        // Cap speed
+        xSpeed = (std::abs(xSpeed) > maxSpeed) ? (maxSpeed * (xSpeed > 0 ? 1 : -1)) : xSpeed;
+        ySpeed = (std::abs(ySpeed) > maxSpeed) ? (maxSpeed * (ySpeed > 0 ? 1 : -1)) : ySpeed;
     }
 
 

@@ -11,7 +11,7 @@
 using namespace std;
 class Ball {
     public:
-        Ball(float x, float y, float xSpeed, float ySpeed, float radius);
+        Ball();
         void update();
         void draw(Paddle paddle);
         string getCounter();

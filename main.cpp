@@ -41,7 +41,7 @@ int main(void)
     //--------------------------------------------------------------------------------------
     const int screenWidth = 800;
     const int screenHeight = 450;
-    Ball ball(screenWidth/2, screenHeight/2, 3, 4, 10);
+    Ball ball;
     Paddle paddle((screenWidth/2)-35);
     InitWindow(screenWidth, screenHeight, "Bouncing Ball - Seif Khalfia");
 
