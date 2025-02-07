@@ -10,8 +10,8 @@
 Ball::Ball() {
     x = GetScreenWidth() / 2;
     y = GetScreenHeight() / 2;
-    xSpeed = 1;
-    ySpeed = 1;
+    xSpeed = 3;
+    ySpeed = 2;
     radius = 10;
 }
 
