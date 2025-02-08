@@ -1,7 +1,7 @@
 # Paddle Bounce Game 🎮
 
 A simple **paddle bounce game** built using **C++** and **Raylib**. The game features a paddle controlled by the player, a bouncing ball, and a lives system. The goal is to keep the ball from falling off the screen while increasing your score.
-![img.png](img.png)
+![ss.png](ss.png)
 ## Game Concept
 **Paddle Bounce** challenges players to control a paddle at the bottom of the screen, bouncing a ball to keep it in play. The goal is to maintain control, avoid missing the ball, and rack up points by bouncing it off the paddle. Players have a limited number of lives, and the game ends when all lives are lost.
 
