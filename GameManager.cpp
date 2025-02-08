@@ -4,6 +4,9 @@
 
 #include "GameManager.h"
 
+#include <iostream>
+#include <ostream>
+
 // Initialize static member
 GameManager* GameManager::gameManager = nullptr;
 
@@ -13,8 +16,9 @@ GameManager::GameManager():
     paddleWidth(70), paddleHeight(10),
     ballRadius(10), xSpeed(3),
     ySpeed(2), radius(10),
-    ball(xSpeed, ySpeed, radius),
-    paddle((screenWidth / 2) - (paddleWidth / 2), paddleY, paddleSpeed, paddleWidth, paddleHeight){}
+    ball(xSpeed, ySpeed, radius, screenHeight, screenWidth),
+    paddle((screenWidth / 2) - (paddleWidth / 2), paddleY, paddleSpeed, paddleWidth, paddleHeight),
+    livesManager(livesCount){}
 
 // Singleton instance method
 GameManager* GameManager::getInstance() {
@@ -56,8 +60,8 @@ void GameManager::collider() {
         ball.ceilingBounce();
     }
     if (ballY >= screenHeight) {
-        lives--;
-        if (lives <= 0) return;
+        if (livesManager.dead()) return;
+        livesManager.loseLife();
         ball.reset();
     }
 }
@@ -73,11 +77,8 @@ void GameManager::updateFrame() {
 void GameManager::drawGame() {
     ClearBackground(color ? RAYWHITE : BLACK);
     DrawText(title.c_str(), 220, 200, 20, LIGHTGRAY);
-    ball.draw();
+    if (!livesManager.dead()) ball.draw();
     paddle.draw();
-    //Draw Lives
-    for (int i = 1; i<= lives; i++) {
-        DrawCircle(800 - (20*i), 20,5,RED);
-    }
+    livesManager.draw();
     DrawText(std::to_string(score).c_str(), 15, 20, 30, GRAY);
 }

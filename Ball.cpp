@@ -6,16 +6,15 @@
 #include <raylib.h>
 #include <cstdlib>
 #include <ctime>
+#include <iostream>
 
 #include "Paddle.h"
 using namespace std;
 
-Ball::Ball(float xSpeed, float ySpeed, float radius) {
+Ball::Ball(float xSpeed, float ySpeed, float radius, int screenHeight, int screenWidth) {
     srand(std::time(0));  // Seed random number generator
-
-    x = rand() % GetScreenWidth();  // Any horizontal position
-    y = rand() % (GetScreenHeight() / 2);  // Only in the upper half
-
+    x = rand() % screenWidth;  // Any horizontal position
+    y = rand() % ((screenHeight/2) + 1);  // Generates a number from 0 to x // Ensure it never exceeds half of screen height
     this->xSpeed = xSpeed;
     this->ySpeed = ySpeed;
     this->radius = radius;

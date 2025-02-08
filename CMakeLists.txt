@@ -19,7 +19,9 @@ add_executable(Lecture1_Raylib main.cpp
         Paddle.cpp
         Paddle.h
         GameManager.cpp
-        GameManager.h)
+        GameManager.h
+        LivesManager.cpp
+        LivesManager.h)
 
 # Link libraries
 if (LIBS)

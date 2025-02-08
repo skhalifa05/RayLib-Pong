@@ -11,7 +11,7 @@
 using namespace std;
 class Ball {
     public:
-        Ball(float xSpeed, float ySpeed, float radius);
+        Ball(float xSpeed, float ySpeed, float radius, int screenHeight, int screenWidth);
         void update();
         void draw();
         pair<float, float> getLocation();

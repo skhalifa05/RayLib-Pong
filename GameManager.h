@@ -9,6 +9,7 @@
 
 #include "raylib.h"
 #include "Ball.h"
+#include "LivesManager.h"
 #include "Paddle.h"
 
 class GameManager {
@@ -17,9 +18,10 @@ class GameManager {
         //game env - screen
         const int screenWidth;
         const int screenHeight;
+        const int livesCount = 3;
         bool color = 1;
-        int lives = 3;
         int score = 0;
+        LivesManager livesManager;
 
         const string title = "Bouncing Ball - Seif Khalfia";
         //game env - paddle
