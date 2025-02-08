@@ -70,6 +70,13 @@ build CMakeFiles/Lecture1_Raylib.dir/Paddle.cpp.o: CXX_COMPILER__Lecture1_Raylib
   OBJECT_DIR = CMakeFiles/Lecture1_Raylib.dir
   OBJECT_FILE_DIR = CMakeFiles/Lecture1_Raylib.dir
 
+build CMakeFiles/Lecture1_Raylib.dir/GameManager.cpp.o: CXX_COMPILER__Lecture1_Raylib_unscanned_Debug /Users/seifkhalifa/Documents/Uni/W2025$ Courses/Video$ Game$ Arch/Lecture1$ -$ Raylib/GameManager.cpp || cmake_object_order_depends_target_Lecture1_Raylib
+  DEP_FILE = CMakeFiles/Lecture1_Raylib.dir/GameManager.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+  INCLUDES = -I"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Lecture1 - Raylib/include"
+  OBJECT_DIR = CMakeFiles/Lecture1_Raylib.dir
+  OBJECT_FILE_DIR = CMakeFiles/Lecture1_Raylib.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Lecture1_Raylib
@@ -78,7 +85,7 @@ build CMakeFiles/Lecture1_Raylib.dir/Paddle.cpp.o: CXX_COMPILER__Lecture1_Raylib
 #############################################
 # Link the executable Lecture1_Raylib
 
-build Lecture1_Raylib: CXX_EXECUTABLE_LINKER__Lecture1_Raylib_Debug CMakeFiles/Lecture1_Raylib.dir/main.cpp.o CMakeFiles/Lecture1_Raylib.dir/Ball.cpp.o CMakeFiles/Lecture1_Raylib.dir/Paddle.cpp.o | /Users/seifkhalifa/Documents/Uni/W2025$ Courses/Video$ Game$ Arch/Lecture1$ -$ Raylib/lib/libraylib.a
+build Lecture1_Raylib: CXX_EXECUTABLE_LINKER__Lecture1_Raylib_Debug CMakeFiles/Lecture1_Raylib.dir/main.cpp.o CMakeFiles/Lecture1_Raylib.dir/Ball.cpp.o CMakeFiles/Lecture1_Raylib.dir/Paddle.cpp.o CMakeFiles/Lecture1_Raylib.dir/GameManager.cpp.o | /Users/seifkhalifa/Documents/Uni/W2025$ Courses/Video$ Game$ Arch/Lecture1$ -$ Raylib/lib/libraylib.a
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk
   LINK_LIBRARIES = -Wl,-rpath,"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Lecture1 - Raylib/lib"  "/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Lecture1 - Raylib/lib/libraylib.a"  -framework CoreFoundation  -framework IOKit  -framework CoreGraphics  -framework AppKit
   LINK_PATH = -L"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Lecture1 - Raylib/lib"

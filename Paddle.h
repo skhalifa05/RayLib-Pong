@@ -10,13 +10,13 @@ using namespace std;
 
 class Paddle {
     public:
-        Paddle(float center);
+        Paddle(float center, float yCoordinates, float paddleSpeed,  float width, float height);
         void update();
         void draw();
         pair<float, float> getLocation();
 
     private:
-        float x, y;
+        float x, y, paddleSpeed, width, height;
 
 };
 

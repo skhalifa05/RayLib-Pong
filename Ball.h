@@ -11,20 +11,18 @@
 using namespace std;
 class Ball {
     public:
-        Ball();
+        Ball(float xSpeed, float ySpeed, float radius);
         void update();
-        void draw(Paddle paddle);
-        string getCounter();
-        bool getColor();
-        int getLives();
+        void draw();
+        pair<float, float> getLocation();
+        void paddleBounce(float speedMultiplier, float maxSpeed);
+        void sideWallBounce();
+        void ceilingBounce();
+        void reset();
 
     private:
-        float x,y;
-        float xSpeed, ySpeed;
-        float radius;
-        int bounces = 0;
+        float x,y, xSpeed, ySpeed, radius;
         bool color = 0;
-        int lives = 3;
 };
 
 

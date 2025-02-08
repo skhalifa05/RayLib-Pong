@@ -6,14 +6,17 @@
 
 #include <raylib.h>
 
-Paddle::Paddle(float center) {
+Paddle::Paddle(float center, float yCoordinates, float paddleSpeed, float width, float height) {
     x = center;
-    y = 400;
+    y = yCoordinates;
+    this->paddleSpeed = paddleSpeed;
+    this->width = width;
+    this->height = height;
 }
 
 void Paddle::update() {
-    if (IsKeyDown(KEY_RIGHT)) x += 8.0f;
-    if (IsKeyDown(KEY_LEFT)) x -= 8.0f;
+    if (IsKeyDown(KEY_RIGHT)) x += paddleSpeed;
+    if (IsKeyDown(KEY_LEFT)) x -= paddleSpeed;
 
     // Screen wrapping logic
     if (x > GetScreenWidth()) x = 0;  // If the paddle exits the right side, re-enter from the left
@@ -21,7 +24,7 @@ void Paddle::update() {
 }
 
 void Paddle::draw() {
-    DrawRectangle(x, y, 70, 10, BLUE);
+    DrawRectangle(x, y, width, height, BLUE);
 }
 
 pair<float, float> Paddle::getLocation() {
