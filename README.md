@@ -20,6 +20,9 @@ A simple **paddle bounce game** built using **C++** and **Raylib**. The game fea
 * **Life System**: Lose a life when the ball touches the bottom.
 * **Color Switching**: Paddle hits change the background color.
 * **Screen Wrapping**: Paddle re-enters from the opposite side if it moves beyond the screen boundaries.
+* **Power-Up System**: Collect power-ups that spawn randomly to enhance gameplay. Power-ups can provide effects such as:
+     * **Larger Paddle**:  increases the paddle’s width for easier ball control.
+     * **Extra Life**: Grants an additional life to extend gameplay.
 
 ## Code Structure
 
@@ -32,6 +35,10 @@ GameManager | Controls game logic, updates, and rendering (Singleton Pattern).
 Ball | Handles movement, bouncing, and resets.
 Paddle | Controls user input and movement.
 LivesManager | Tracks player lives and updates the UI.
+PowerUpManager | Spawns, tracks, and executes power-ups.
+PowerUp | Base class for all power-ups, defining common behavior.
+LargerPaddle | Inherits from PowerUp, increases paddle size when activated.
+ExtraLife | Inherits from PowerUp, grants an additional life.
 
 ## 📂 Project Structure
 
@@ -39,6 +46,12 @@ LivesManager | Tracks player lives and updates the UI.
     ├── include/
     ├── lib/
     ├── src/
+    │   ├── PowerUps/
+    │   │   ├── ExtraLife.h        # Header for Extra Life
+    │   │   ├── ExtraLife.cpp        # PowerUp for Larger Paddle Powerup
+    │   │   ├── LargePaddle.h        # Header for Larger Paddle Powerup
+    │   │   ├── LargePaddle.cpp        # PowerUp for Larger Paddle Powerup
+    │   │   └── PowerUp.h        # Powerup Interface
     │   ├── main.cpp        # Game loop and initialization
     │   ├── GameManager.cpp # Singleton managing game logic
     │   ├── Ball.cpp        # Ball physics and movement

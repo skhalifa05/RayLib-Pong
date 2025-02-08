@@ -49,8 +49,8 @@ void GameManager::collider() {
         ball.paddleBounce(speedMultiplier, maxSpeed);
         color = 1 - color;
         // --- Random power-up spawn with 10% probability ---
-        int chance = rand() % 100;  // Generates a number between 0-99
-        if (chance < 100) {  // 10% chance
+        int chance = rand() % 30;  // Generates a number between 0-99
+        if (chance < 100) {  // 30% chance
             spawnRandomPowerUp();
         }
         return;
