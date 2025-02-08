@@ -3,7 +3,7 @@
 A simple **paddle bounce game** built using **C++** and **Raylib**. The game features a paddle controlled by the player, a bouncing ball, and a lives system. The goal is to keep the ball from falling off the screen while increasing your score.
 
 ## Game Concept
-Pong Breaker challenges players to control a paddle at the bottom of the screen, bouncing a ball to keep it in play. The goal is to maintain control, avoid missing the ball, and rack up points by bouncing it off the paddle. Players have a limited number of lives, and the game ends when all lives are lost.
+**Paddle Bounce** challenges players to control a paddle at the bottom of the screen, bouncing a ball to keep it in play. The goal is to maintain control, avoid missing the ball, and rack up points by bouncing it off the paddle. Players have a limited number of lives, and the game ends when all lives are lost.
 
 ## Gameplay
 * 	Use the left (←) and right (→) arrow keys to move the paddle.
