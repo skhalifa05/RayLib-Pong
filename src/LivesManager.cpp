@@ -4,6 +4,8 @@
 
 #include "LivesManager.h"
 
+#include <iostream>
+#include <ostream>
 #include <../include/raylib.h>
 
 LivesManager::LivesManager(int lives) {
@@ -12,6 +14,10 @@ LivesManager::LivesManager(int lives) {
 
 void LivesManager::loseLife() {
     this->lives--;
+}
+
+void LivesManager::gainLife() {
+    this->lives++;
 }
 
 void LivesManager::draw() {

@@ -14,6 +14,8 @@ class Paddle {
         void update();
         void draw();
         pair<float, float> getLocation();
+        void increaseSize();
+        float getWidth();
 
     private:
         float x, y, paddleSpeed, width, height;

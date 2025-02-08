@@ -16,6 +16,7 @@ class LivesManager {
         void loseLife();
         void draw();
         bool dead();
+        void gainLife();
 };
 
 

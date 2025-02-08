@@ -11,6 +11,7 @@
 #include "Ball.h"
 #include "LivesManager.h"
 #include "Paddle.h"
+#include "PowerUpsManager.h"
 
 class GameManager {
     private:
@@ -22,6 +23,7 @@ class GameManager {
         bool color = 1;
         int score = 0;
         LivesManager livesManager;
+        PowerUpManager powerUpManager;
 
         const string title = "Bouncing Ball - Seif Khalfia";
         //game env - paddle
@@ -43,6 +45,8 @@ class GameManager {
 
         GameManager();
         void collider();
+        void spawnRandomPowerUp();
+        void powerUpCollision();
 
     public:
         // Delete copy constructor and assignment operator

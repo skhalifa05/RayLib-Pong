@@ -21,7 +21,14 @@ add_executable(Lecture1_Raylib src/main.cpp
         src/GameManager.cpp
         src/GameManager.h
         src/LivesManager.cpp
-        src/LivesManager.h)
+        src/LivesManager.h
+        src/PowerUpsManager.cpp
+        src/PowerUpsManager.h
+        src/PowerUps/PowerUp.h
+        src/PowerUps/LargerPaddle.h
+        src/PowerUps/ExtraLife.h
+        src/PowerUps/LargerPaddle.cpp
+        src/PowerUps/ExtraLife.cpp)
 
 # Link libraries
 if (LIBS)

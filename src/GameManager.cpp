@@ -18,7 +18,8 @@ GameManager::GameManager():
     ySpeed(2), radius(10),
     ball(xSpeed, ySpeed, radius, screenHeight, screenWidth),
     paddle((screenWidth / 2) - (paddleWidth / 2), paddleY, paddleSpeed, paddleWidth, paddleHeight),
-    livesManager(livesCount){}
+    livesManager(livesCount),
+    powerUpManager(&paddle, &ball, &livesManager){}
 
 // Singleton instance method
 GameManager* GameManager::getInstance() {
@@ -39,7 +40,7 @@ void GameManager::collider() {
     auto [paddleX, paddleY] = paddle.getLocation();
     auto [ballX, ballY] = ball.getLocation();
     bool paddleCollision = (ballX + ballRadius >= paddleX) &&  // Ball's right edge past paddle's left edge
-             (ballX - ballRadius <= paddleX + paddleWidth) &&  // Ball's left edge before paddle's right edge
+             (ballX - ballRadius <= paddleX + paddle.getWidth()) &&  // Ball's left edge before paddle's right edge
              (ballY + ballRadius >= paddleY) &&  // Ball's bottom edge past paddle's top edge
              (ballY - ballRadius <= paddleY + paddleHeight);  // Ball's top edge before paddle's bottom edge
 
@@ -47,6 +48,11 @@ void GameManager::collider() {
         score++;
         ball.paddleBounce(speedMultiplier, maxSpeed);
         color = 1 - color;
+        // --- Random power-up spawn with 10% probability ---
+        int chance = rand() % 100;  // Generates a number between 0-99
+        if (chance < 100) {  // 10% chance
+            spawnRandomPowerUp();
+        }
         return;
     }
 
@@ -65,12 +71,28 @@ void GameManager::collider() {
         ball.reset();
     }
 }
+void GameManager::powerUpCollision() {
+    for (size_t i = 0; i < powerUpManager.getActivePowerUps().size(); i++) {
+        auto [px, py] = paddle.getLocation();
+        auto [puX, puY] = powerUpManager.getActivePowerUps()[i]->getLocation();
 
+        if (px <= puX && puX <= px + paddle.getWidth() &&
+            py <= puY && puY <= py + paddleHeight) {
+            powerUpManager.executePowerUp(i);
+            break;
+            }
+    }
+}
 //update
 void GameManager::updateFrame() {
     ball.update();
     paddle.update();
     collider();
+    powerUpCollision();
+}
+
+void GameManager::spawnRandomPowerUp() {
+    powerUpManager.spawnPowerUp();
 }
 
 //draw
@@ -80,5 +102,6 @@ void GameManager::drawGame() {
     if (!livesManager.dead()) ball.draw();
     paddle.draw();
     livesManager.draw();
+    powerUpManager.drawPowerUps();
     DrawText(std::to_string(score).c_str(), 15, 20, 30, GRAY);
 }
