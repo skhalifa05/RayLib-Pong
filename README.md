@@ -35,7 +35,7 @@ LivesManager | Tracks player lives and updates the UI.
 
 ## 📂 Project Structure
 
-    📦 PongBreaker
+    📦 PaddleBounce
     ├── include/
     ├── lib/
     ├── src/
