@@ -16,7 +16,7 @@ void LivesManager::loseLife() {
 
 void LivesManager::draw() {
     for (int i = 1; i<= this->lives; i++) {
-        DrawCircle(800 - (20*i), 20,5,RED);
+        DrawCircle(GetScreenWidth() - (distancebetweenLives*i), distancebetweenLives,5,RED);
     }
 }
 

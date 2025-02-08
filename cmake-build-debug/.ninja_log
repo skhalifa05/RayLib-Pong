@@ -91,3 +91,9 @@
 329	402	1739013515419791866	Lecture1_Raylib	37b3d210336a11c2
 5	342	1739013525439438022	CMakeFiles/Lecture1_Raylib.dir/GameManager.cpp.o	da1d090dbf92cb1e
 343	417	1739013525777167415	Lecture1_Raylib	37b3d210336a11c2
+4	31	1739013624845906567	CMakeFiles/Lecture1_Raylib.dir/LivesManager.cpp.o	8c9982cfd59bce9
+31	104	1739013624873353536	Lecture1_Raylib	37b3d210336a11c2
+5	36	1739013671008613785	CMakeFiles/Lecture1_Raylib.dir/LivesManager.cpp.o	8c9982cfd59bce9
+4	234	1739013671008111916	CMakeFiles/Lecture1_Raylib.dir/main.cpp.o	d95dc95ca5b4c8f3
+5	350	1739013671008484870	CMakeFiles/Lecture1_Raylib.dir/GameManager.cpp.o	da1d090dbf92cb1e
+350	426	1739013671353844328	Lecture1_Raylib	37b3d210336a11c2

@@ -10,6 +10,7 @@
 class LivesManager {
     private:
         int lives = 0;
+        const int distancebetweenLives = 20;
     public:
         LivesManager(int lives);
         void loseLife();
