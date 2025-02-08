@@ -3,7 +3,7 @@
 #include "Ball.h"
 #include "GameManager.h"
 #include "Paddle.h"
-#include "raylib.h"
+#include "../include/raylib.h"
 
 //------------------------------------------------------------------------------------
 // Program main entry point

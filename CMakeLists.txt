@@ -13,15 +13,15 @@ link_directories(${CMAKE_SOURCE_DIR}/lib)
 file(GLOB LIBS "${CMAKE_SOURCE_DIR}/lib/*.a" "${CMAKE_SOURCE_DIR}/lib/*.so")
 
 # Add executable
-add_executable(Lecture1_Raylib main.cpp
-        Ball.cpp
-        Ball.h
-        Paddle.cpp
-        Paddle.h
-        GameManager.cpp
-        GameManager.h
-        LivesManager.cpp
-        LivesManager.h)
+add_executable(Lecture1_Raylib src/main.cpp
+        src/Ball.cpp
+        src/Ball.h
+        src/Paddle.cpp
+        src/Paddle.h
+        src/GameManager.cpp
+        src/GameManager.h
+        src/LivesManager.cpp
+        src/LivesManager.h)
 
 # Link libraries
 if (LIBS)

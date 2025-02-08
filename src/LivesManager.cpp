@@ -4,7 +4,7 @@
 
 #include "LivesManager.h"
 
-#include <raylib.h>
+#include <../include/raylib.h>
 
 LivesManager::LivesManager(int lives) {
     this->lives = lives;

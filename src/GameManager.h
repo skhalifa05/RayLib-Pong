@@ -7,7 +7,7 @@
 
 
 
-#include "raylib.h"
+#include "../include/raylib.h"
 #include "Ball.h"
 #include "LivesManager.h"
 #include "Paddle.h"

@@ -4,7 +4,7 @@
 
 #include "Paddle.h"
 
-#include <raylib.h>
+#include <../include/raylib.h>
 
 Paddle::Paddle(float center, float yCoordinates, float paddleSpeed, float width, float height) {
     x = center;
