@@ -150,8 +150,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Lecture1 - Raylib/cmake-build-debug",
-		"source" : "/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Lecture1 - Raylib"
+		"build" : "/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong/cmake-build-debug",
+		"source" : "/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong"
 	},
 	"version" : 
 	{

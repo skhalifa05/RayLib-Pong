@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.30)
-project(Lecture1_Raylib)
+project(Pong)
 
 set(CMAKE_CXX_STANDARD 20)
 
@@ -13,7 +13,7 @@ link_directories(${CMAKE_SOURCE_DIR}/lib)
 file(GLOB LIBS "${CMAKE_SOURCE_DIR}/lib/*.a" "${CMAKE_SOURCE_DIR}/lib/*.so")
 
 # Add executable
-add_executable(Lecture1_Raylib src/main.cpp
+add_executable(Pong src/main.cpp
         src/Ball.cpp
         src/Ball.h
         src/Paddle.cpp
@@ -32,14 +32,14 @@ add_executable(Lecture1_Raylib src/main.cpp
 
 # Link libraries
 if (LIBS)
-    target_link_libraries(Lecture1_Raylib PRIVATE ${LIBS})
+    target_link_libraries(Pong PRIVATE ${LIBS})
 else()
     message(WARNING "No libraries found in lib/ folder!")
 endif()
 
 # Fix: Link macOS system frameworks (CoreFoundation, IOKit, CoreGraphics, AppKit)
 if(APPLE)
-    target_link_libraries(Lecture1_Raylib PRIVATE
+    target_link_libraries(Pong PRIVATE
             "-framework CoreFoundation"
             "-framework IOKit"
             "-framework CoreGraphics"

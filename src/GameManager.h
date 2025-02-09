@@ -24,7 +24,7 @@ class GameManager {
         int score = 0;
         LivesManager livesManager;
         PowerUpManager powerUpManager;
-        const string title = "Bouncing Ball - Seif Khalfia";
+        const string title = "Pong - Seif Khalfia";
         void drawTimer();
 
         //game env - paddle

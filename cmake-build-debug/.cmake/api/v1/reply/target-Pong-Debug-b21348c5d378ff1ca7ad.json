@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Lecture1_Raylib"
+			"path" : "Pong"
 		}
 	],
 	"backtrace" : 1,
@@ -69,7 +69,7 @@
 			[
 				{
 					"backtrace" : 5,
-					"path" : "/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Lecture1 - Raylib/include"
+					"path" : "/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong/include"
 				}
 			],
 			"language" : "CXX",
@@ -94,7 +94,7 @@
 			]
 		}
 	],
-	"id" : "Lecture1_Raylib::@6890427a1f51a3e7e1df",
+	"id" : "Pong::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -109,16 +109,16 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "-L\"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Lecture1 - Raylib/lib\"",
+				"fragment" : "-L\"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong/lib\"",
 				"role" : "libraryPath"
 			},
 			{
-				"fragment" : "-Wl,-rpath,\"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Lecture1 - Raylib/lib\"",
+				"fragment" : "-Wl,-rpath,\"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong/lib\"",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 3,
-				"fragment" : "\"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Lecture1 - Raylib/lib/libraylib.a\"",
+				"fragment" : "\"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong/lib/libraylib.a\"",
 				"role" : "libraries"
 			},
 			{
@@ -144,8 +144,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "Lecture1_Raylib",
-	"nameOnDisk" : "Lecture1_Raylib",
+	"name" : "Pong",
+	"nameOnDisk" : "Pong",
 	"paths" : 
 	{
 		"build" : ".",

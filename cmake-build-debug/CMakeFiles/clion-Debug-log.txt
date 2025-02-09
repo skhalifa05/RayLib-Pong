@@ -1,4 +1,4 @@
-/Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Users/seifkhalifa/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -G Ninja -S "/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Lecture1 - Raylib" -B "/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Lecture1 - Raylib/cmake-build-debug"
+/Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Users/seifkhalifa/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -G Ninja -S "/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong" -B "/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong/cmake-build-debug"
 -- Configuring done (0.0s)
 -- Generating done (0.0s)
--- Build files have been written to: /Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Lecture1 - Raylib/cmake-build-debug
+-- Build files have been written to: /Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong/cmake-build-debug

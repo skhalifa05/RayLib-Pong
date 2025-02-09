@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Lecture1 - Raylib/cmake-build-debug"
+			"value" : "/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -479,7 +479,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Lecture1 - Raylib/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -539,7 +539,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Lecture1 - Raylib"
+			"value" : "/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong"
 		},
 		{
 			"name" : "CMAKE_INSTALL_NAME_TOOL",
@@ -819,7 +819,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "Lecture1_Raylib"
+			"value" : "Pong"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1127,7 +1127,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Lecture1 - Raylib/cmake-build-debug"
+			"value" : "/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong/cmake-build-debug"
 		},
 		{
 			"name" : "Lecture1_Raylib_IS_TOP_LEVEL",
@@ -1151,10 +1151,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Lecture1 - Raylib"
+			"value" : "/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong"
 		},
 		{
-			"name" : "Lecture_BINARY_DIR",
+			"name" : "Pong_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1163,46 +1163,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Lecture1 - Raylib/cmake-build-debug"
+			"value" : "/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong/cmake-build-debug"
 		},
 		{
-			"name" : "Lecture_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "ON"
-		},
-		{
-			"name" : "Lecture_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Lecture1 - Raylib"
-		},
-		{
-			"name" : "Raylib_Starter_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Lecture1 - Raylib/cmake-build-debug"
-		},
-		{
-			"name" : "Raylib_Starter_IS_TOP_LEVEL",
+			"name" : "Pong_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1214,7 +1178,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "Raylib_Starter_SOURCE_DIR",
+			"name" : "Pong_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1223,7 +1187,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Lecture1 - Raylib"
+			"value" : "/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong"
 		}
 	],
 	"kind" : "cache",

@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: Lecture1_Raylib
+# Project: Pong
 # Configurations: Debug
 # =============================================================================
 
@@ -39,96 +39,96 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /Users/seifkhalifa/Documents/Uni/W2025$ Courses/Video$ Game$ Arch/Lecture1$ -$ Raylib/cmake-build-debug/
+cmake_ninja_workdir = /Users/seifkhalifa/Documents/Uni/W2025$ Courses/Video$ Game$ Arch/Pong/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target Lecture1_Raylib
+# Object build statements for EXECUTABLE target Pong
 
 
 #############################################
-# Order-only phony target for Lecture1_Raylib
+# Order-only phony target for Pong
 
-build cmake_object_order_depends_target_Lecture1_Raylib: phony || .
+build cmake_object_order_depends_target_Pong: phony || .
 
-build CMakeFiles/Lecture1_Raylib.dir/src/main.cpp.o: CXX_COMPILER__Lecture1_Raylib_unscanned_Debug /Users/seifkhalifa/Documents/Uni/W2025$ Courses/Video$ Game$ Arch/Lecture1$ -$ Raylib/src/main.cpp || cmake_object_order_depends_target_Lecture1_Raylib
-  DEP_FILE = CMakeFiles/Lecture1_Raylib.dir/src/main.cpp.o.d
+build CMakeFiles/Pong.dir/src/main.cpp.o: CXX_COMPILER__Pong_unscanned_Debug /Users/seifkhalifa/Documents/Uni/W2025$ Courses/Video$ Game$ Arch/Pong/src/main.cpp || cmake_object_order_depends_target_Pong
+  DEP_FILE = CMakeFiles/Pong.dir/src/main.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
-  INCLUDES = -I"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Lecture1 - Raylib/include"
-  OBJECT_DIR = CMakeFiles/Lecture1_Raylib.dir
-  OBJECT_FILE_DIR = CMakeFiles/Lecture1_Raylib.dir/src
+  INCLUDES = -I"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong/include"
+  OBJECT_DIR = CMakeFiles/Pong.dir
+  OBJECT_FILE_DIR = CMakeFiles/Pong.dir/src
 
-build CMakeFiles/Lecture1_Raylib.dir/src/Ball.cpp.o: CXX_COMPILER__Lecture1_Raylib_unscanned_Debug /Users/seifkhalifa/Documents/Uni/W2025$ Courses/Video$ Game$ Arch/Lecture1$ -$ Raylib/src/Ball.cpp || cmake_object_order_depends_target_Lecture1_Raylib
-  DEP_FILE = CMakeFiles/Lecture1_Raylib.dir/src/Ball.cpp.o.d
+build CMakeFiles/Pong.dir/src/Ball.cpp.o: CXX_COMPILER__Pong_unscanned_Debug /Users/seifkhalifa/Documents/Uni/W2025$ Courses/Video$ Game$ Arch/Pong/src/Ball.cpp || cmake_object_order_depends_target_Pong
+  DEP_FILE = CMakeFiles/Pong.dir/src/Ball.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
-  INCLUDES = -I"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Lecture1 - Raylib/include"
-  OBJECT_DIR = CMakeFiles/Lecture1_Raylib.dir
-  OBJECT_FILE_DIR = CMakeFiles/Lecture1_Raylib.dir/src
+  INCLUDES = -I"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong/include"
+  OBJECT_DIR = CMakeFiles/Pong.dir
+  OBJECT_FILE_DIR = CMakeFiles/Pong.dir/src
 
-build CMakeFiles/Lecture1_Raylib.dir/src/Paddle.cpp.o: CXX_COMPILER__Lecture1_Raylib_unscanned_Debug /Users/seifkhalifa/Documents/Uni/W2025$ Courses/Video$ Game$ Arch/Lecture1$ -$ Raylib/src/Paddle.cpp || cmake_object_order_depends_target_Lecture1_Raylib
-  DEP_FILE = CMakeFiles/Lecture1_Raylib.dir/src/Paddle.cpp.o.d
+build CMakeFiles/Pong.dir/src/Paddle.cpp.o: CXX_COMPILER__Pong_unscanned_Debug /Users/seifkhalifa/Documents/Uni/W2025$ Courses/Video$ Game$ Arch/Pong/src/Paddle.cpp || cmake_object_order_depends_target_Pong
+  DEP_FILE = CMakeFiles/Pong.dir/src/Paddle.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
-  INCLUDES = -I"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Lecture1 - Raylib/include"
-  OBJECT_DIR = CMakeFiles/Lecture1_Raylib.dir
-  OBJECT_FILE_DIR = CMakeFiles/Lecture1_Raylib.dir/src
+  INCLUDES = -I"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong/include"
+  OBJECT_DIR = CMakeFiles/Pong.dir
+  OBJECT_FILE_DIR = CMakeFiles/Pong.dir/src
 
-build CMakeFiles/Lecture1_Raylib.dir/src/GameManager.cpp.o: CXX_COMPILER__Lecture1_Raylib_unscanned_Debug /Users/seifkhalifa/Documents/Uni/W2025$ Courses/Video$ Game$ Arch/Lecture1$ -$ Raylib/src/GameManager.cpp || cmake_object_order_depends_target_Lecture1_Raylib
-  DEP_FILE = CMakeFiles/Lecture1_Raylib.dir/src/GameManager.cpp.o.d
+build CMakeFiles/Pong.dir/src/GameManager.cpp.o: CXX_COMPILER__Pong_unscanned_Debug /Users/seifkhalifa/Documents/Uni/W2025$ Courses/Video$ Game$ Arch/Pong/src/GameManager.cpp || cmake_object_order_depends_target_Pong
+  DEP_FILE = CMakeFiles/Pong.dir/src/GameManager.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
-  INCLUDES = -I"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Lecture1 - Raylib/include"
-  OBJECT_DIR = CMakeFiles/Lecture1_Raylib.dir
-  OBJECT_FILE_DIR = CMakeFiles/Lecture1_Raylib.dir/src
+  INCLUDES = -I"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong/include"
+  OBJECT_DIR = CMakeFiles/Pong.dir
+  OBJECT_FILE_DIR = CMakeFiles/Pong.dir/src
 
-build CMakeFiles/Lecture1_Raylib.dir/src/LivesManager.cpp.o: CXX_COMPILER__Lecture1_Raylib_unscanned_Debug /Users/seifkhalifa/Documents/Uni/W2025$ Courses/Video$ Game$ Arch/Lecture1$ -$ Raylib/src/LivesManager.cpp || cmake_object_order_depends_target_Lecture1_Raylib
-  DEP_FILE = CMakeFiles/Lecture1_Raylib.dir/src/LivesManager.cpp.o.d
+build CMakeFiles/Pong.dir/src/LivesManager.cpp.o: CXX_COMPILER__Pong_unscanned_Debug /Users/seifkhalifa/Documents/Uni/W2025$ Courses/Video$ Game$ Arch/Pong/src/LivesManager.cpp || cmake_object_order_depends_target_Pong
+  DEP_FILE = CMakeFiles/Pong.dir/src/LivesManager.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
-  INCLUDES = -I"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Lecture1 - Raylib/include"
-  OBJECT_DIR = CMakeFiles/Lecture1_Raylib.dir
-  OBJECT_FILE_DIR = CMakeFiles/Lecture1_Raylib.dir/src
+  INCLUDES = -I"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong/include"
+  OBJECT_DIR = CMakeFiles/Pong.dir
+  OBJECT_FILE_DIR = CMakeFiles/Pong.dir/src
 
-build CMakeFiles/Lecture1_Raylib.dir/src/PowerUpsManager.cpp.o: CXX_COMPILER__Lecture1_Raylib_unscanned_Debug /Users/seifkhalifa/Documents/Uni/W2025$ Courses/Video$ Game$ Arch/Lecture1$ -$ Raylib/src/PowerUpsManager.cpp || cmake_object_order_depends_target_Lecture1_Raylib
-  DEP_FILE = CMakeFiles/Lecture1_Raylib.dir/src/PowerUpsManager.cpp.o.d
+build CMakeFiles/Pong.dir/src/PowerUpsManager.cpp.o: CXX_COMPILER__Pong_unscanned_Debug /Users/seifkhalifa/Documents/Uni/W2025$ Courses/Video$ Game$ Arch/Pong/src/PowerUpsManager.cpp || cmake_object_order_depends_target_Pong
+  DEP_FILE = CMakeFiles/Pong.dir/src/PowerUpsManager.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
-  INCLUDES = -I"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Lecture1 - Raylib/include"
-  OBJECT_DIR = CMakeFiles/Lecture1_Raylib.dir
-  OBJECT_FILE_DIR = CMakeFiles/Lecture1_Raylib.dir/src
+  INCLUDES = -I"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong/include"
+  OBJECT_DIR = CMakeFiles/Pong.dir
+  OBJECT_FILE_DIR = CMakeFiles/Pong.dir/src
 
-build CMakeFiles/Lecture1_Raylib.dir/src/PowerUps/LargerPaddle.cpp.o: CXX_COMPILER__Lecture1_Raylib_unscanned_Debug /Users/seifkhalifa/Documents/Uni/W2025$ Courses/Video$ Game$ Arch/Lecture1$ -$ Raylib/src/PowerUps/LargerPaddle.cpp || cmake_object_order_depends_target_Lecture1_Raylib
-  DEP_FILE = CMakeFiles/Lecture1_Raylib.dir/src/PowerUps/LargerPaddle.cpp.o.d
+build CMakeFiles/Pong.dir/src/PowerUps/LargerPaddle.cpp.o: CXX_COMPILER__Pong_unscanned_Debug /Users/seifkhalifa/Documents/Uni/W2025$ Courses/Video$ Game$ Arch/Pong/src/PowerUps/LargerPaddle.cpp || cmake_object_order_depends_target_Pong
+  DEP_FILE = CMakeFiles/Pong.dir/src/PowerUps/LargerPaddle.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
-  INCLUDES = -I"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Lecture1 - Raylib/include"
-  OBJECT_DIR = CMakeFiles/Lecture1_Raylib.dir
-  OBJECT_FILE_DIR = CMakeFiles/Lecture1_Raylib.dir/src/PowerUps
+  INCLUDES = -I"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong/include"
+  OBJECT_DIR = CMakeFiles/Pong.dir
+  OBJECT_FILE_DIR = CMakeFiles/Pong.dir/src/PowerUps
 
-build CMakeFiles/Lecture1_Raylib.dir/src/PowerUps/ExtraLife.cpp.o: CXX_COMPILER__Lecture1_Raylib_unscanned_Debug /Users/seifkhalifa/Documents/Uni/W2025$ Courses/Video$ Game$ Arch/Lecture1$ -$ Raylib/src/PowerUps/ExtraLife.cpp || cmake_object_order_depends_target_Lecture1_Raylib
-  DEP_FILE = CMakeFiles/Lecture1_Raylib.dir/src/PowerUps/ExtraLife.cpp.o.d
+build CMakeFiles/Pong.dir/src/PowerUps/ExtraLife.cpp.o: CXX_COMPILER__Pong_unscanned_Debug /Users/seifkhalifa/Documents/Uni/W2025$ Courses/Video$ Game$ Arch/Pong/src/PowerUps/ExtraLife.cpp || cmake_object_order_depends_target_Pong
+  DEP_FILE = CMakeFiles/Pong.dir/src/PowerUps/ExtraLife.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
-  INCLUDES = -I"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Lecture1 - Raylib/include"
-  OBJECT_DIR = CMakeFiles/Lecture1_Raylib.dir
-  OBJECT_FILE_DIR = CMakeFiles/Lecture1_Raylib.dir/src/PowerUps
+  INCLUDES = -I"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong/include"
+  OBJECT_DIR = CMakeFiles/Pong.dir
+  OBJECT_FILE_DIR = CMakeFiles/Pong.dir/src/PowerUps
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target Lecture1_Raylib
+# Link build statements for EXECUTABLE target Pong
 
 
 #############################################
-# Link the executable Lecture1_Raylib
+# Link the executable Pong
 
-build Lecture1_Raylib: CXX_EXECUTABLE_LINKER__Lecture1_Raylib_Debug CMakeFiles/Lecture1_Raylib.dir/src/main.cpp.o CMakeFiles/Lecture1_Raylib.dir/src/Ball.cpp.o CMakeFiles/Lecture1_Raylib.dir/src/Paddle.cpp.o CMakeFiles/Lecture1_Raylib.dir/src/GameManager.cpp.o CMakeFiles/Lecture1_Raylib.dir/src/LivesManager.cpp.o CMakeFiles/Lecture1_Raylib.dir/src/PowerUpsManager.cpp.o CMakeFiles/Lecture1_Raylib.dir/src/PowerUps/LargerPaddle.cpp.o CMakeFiles/Lecture1_Raylib.dir/src/PowerUps/ExtraLife.cpp.o | /Users/seifkhalifa/Documents/Uni/W2025$ Courses/Video$ Game$ Arch/Lecture1$ -$ Raylib/lib/libraylib.a
+build Pong: CXX_EXECUTABLE_LINKER__Pong_Debug CMakeFiles/Pong.dir/src/main.cpp.o CMakeFiles/Pong.dir/src/Ball.cpp.o CMakeFiles/Pong.dir/src/Paddle.cpp.o CMakeFiles/Pong.dir/src/GameManager.cpp.o CMakeFiles/Pong.dir/src/LivesManager.cpp.o CMakeFiles/Pong.dir/src/PowerUpsManager.cpp.o CMakeFiles/Pong.dir/src/PowerUps/LargerPaddle.cpp.o CMakeFiles/Pong.dir/src/PowerUps/ExtraLife.cpp.o | /Users/seifkhalifa/Documents/Uni/W2025$ Courses/Video$ Game$ Arch/Pong/lib/libraylib.a
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk
-  LINK_LIBRARIES = -Wl,-rpath,"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Lecture1 - Raylib/lib"  "/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Lecture1 - Raylib/lib/libraylib.a"  -framework CoreFoundation  -framework IOKit  -framework CoreGraphics  -framework AppKit
-  LINK_PATH = -L"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Lecture1 - Raylib/lib"
-  OBJECT_DIR = CMakeFiles/Lecture1_Raylib.dir
+  LINK_LIBRARIES = -Wl,-rpath,"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong/lib"  "/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong/lib/libraylib.a"  -framework CoreFoundation  -framework IOKit  -framework CoreGraphics  -framework AppKit
+  LINK_PATH = -L"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong/lib"
+  OBJECT_DIR = CMakeFiles/Pong.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = Lecture1_Raylib
-  TARGET_PDB = Lecture1_Raylib.dbg
+  TARGET_FILE = Pong
+  TARGET_PDB = Pong.dbg
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Lecture1 - Raylib/cmake-build-debug" && /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd "/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong/cmake-build-debug" && /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -139,7 +139,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Lecture1 - Raylib/cmake-build-debug" && /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake --regenerate-during-build -S"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Lecture1 - Raylib" -B"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Lecture1 - Raylib/cmake-build-debug"
+  COMMAND = cd "/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong/cmake-build-debug" && /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake --regenerate-during-build -S"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong" -B"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong/cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -155,9 +155,9 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 #############################################
-# Folder: /Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Lecture1 - Raylib/cmake-build-debug
+# Folder: /Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong/cmake-build-debug
 
-build all: phony Lecture1_Raylib
+build all: phony Pong
 
 # =============================================================================
 # Built-in targets
@@ -166,14 +166,14 @@ build all: phony Lecture1_Raylib
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCInformation.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCXXInformation.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/AppleClang-C.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/AppleClang-CXX.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Clang.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/GNU.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-AppleClang-C.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-AppleClang-CXX.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang-C.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang-CXX.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Darwin-Initialize.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Darwin.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/UnixPaths.cmake /Users/seifkhalifa/Documents/Uni/W2025$ Courses/Video$ Game$ Arch/Lecture1$ -$ Raylib/CMakeLists.txt CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeCXXCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCInformation.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCXXInformation.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/AppleClang-C.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/AppleClang-CXX.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Clang.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/GNU.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-AppleClang-C.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-AppleClang-CXX.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang-C.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang-CXX.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Darwin-Initialize.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Darwin.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/UnixPaths.cmake /Users/seifkhalifa/Documents/Uni/W2025$ Courses/Video$ Game$ Arch/Pong/CMakeLists.txt CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeCXXCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCInformation.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCXXInformation.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/AppleClang-C.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/AppleClang-CXX.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Clang.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/GNU.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-AppleClang-C.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-AppleClang-CXX.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang-C.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang-CXX.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Darwin-Initialize.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Darwin.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/UnixPaths.cmake /Users/seifkhalifa/Documents/Uni/W2025$ Courses/Video$ Game$ Arch/Lecture1$ -$ Raylib/CMakeLists.txt CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeCXXCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake: phony
+build /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCInformation.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCXXInformation.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/AppleClang-C.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/AppleClang-CXX.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Clang.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/GNU.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-AppleClang-C.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-AppleClang-CXX.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang-C.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang-CXX.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Darwin-Initialize.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Darwin.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/UnixPaths.cmake /Users/seifkhalifa/Documents/Uni/W2025$ Courses/Video$ Game$ Arch/Pong/CMakeLists.txt CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeCXXCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake: phony
 
 
 #############################################
