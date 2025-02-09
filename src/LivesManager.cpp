@@ -16,8 +16,8 @@ void LivesManager::loseLife() {
     this->lives--;
 }
 
-void LivesManager::gainLife() {
-    this->lives++;
+void LivesManager::gainLife(int count = 1) {
+    this->lives += count;
 }
 
 void LivesManager::draw() {
@@ -28,5 +28,11 @@ void LivesManager::draw() {
 
 bool LivesManager::dead() {
     return lives == 0;
+}
+
+void LivesManager::update() {
+    if (IsKeyDown(KEY_SPACE) && this->dead()) {
+        this->gainLife(3);
+    }
 }
 

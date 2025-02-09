@@ -19,6 +19,7 @@ class Ball {
         void sideWallBounce();
         void ceilingBounce();
         void reset();
+        void completereset(float xSpeed, float ySpeed);
 
     private:
         float x,y, xSpeed, ySpeed, radius;

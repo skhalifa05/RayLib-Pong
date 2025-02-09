@@ -13,17 +13,13 @@ Paddle::Paddle(float center, float yCoordinates, float paddleSpeed, float width,
     x = center;
     y = yCoordinates;
     this->paddleSpeed = paddleSpeed;
-    this->width = 70;
-    this->height = 10;
+    this->width = width;
+    this->height = height;
 }
 
 void Paddle::update() {
     if (IsKeyDown(KEY_RIGHT)) x += paddleSpeed;
     if (IsKeyDown(KEY_LEFT)) x -= paddleSpeed;
-    // Debug: Increase size when pressing SPACE
-    if (IsKeyPressed(KEY_SPACE)) {
-        increaseSize();
-    }
     // Screen wrapping logic
     if (x > GetScreenWidth()) x = 0;  // If the paddle exits the right side, re-enter from the left
     if (x < 0) x = GetScreenWidth();  // If the paddle exits the left side, re-enter from the right

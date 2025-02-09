@@ -58,3 +58,12 @@ void Ball::paddleBounce(float speedMultiplier, float maxSpeed) {
     xSpeed = (std::abs(xSpeed) > maxSpeed) ? (maxSpeed * (xSpeed > 0 ? 1 : -1)) : xSpeed;
     ySpeed = (std::abs(ySpeed) > maxSpeed) ? (maxSpeed * (ySpeed > 0 ? 1 : -1)) : ySpeed;
 }
+
+void Ball::completereset(float xSpeed, float ySpeed) {
+    this->xSpeed = xSpeed;
+    this->ySpeed = ySpeed;
+    srand(std::time(0));  // Seed random number generator
+
+    x = rand() % GetScreenWidth();  // Any horizontal position
+    y = rand() % (GetScreenHeight() / 2);  // Only in the upper half
+}

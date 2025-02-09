@@ -30,7 +30,7 @@ public:
     void spawnPowerUp();
     void executePowerUp(int index);
     void drawPowerUps();  // To display them on the screen
-
+    void reset();
     std::vector<std::unique_ptr<PowerUp>>& getActivePowerUps();
 };
 

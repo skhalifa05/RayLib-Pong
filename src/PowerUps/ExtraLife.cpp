@@ -11,5 +11,5 @@ std::pair<float, float> ExtraLife::getLocation() {
 }
 
 void ExtraLife::execute() {
-    livesManager->gainLife();
+    livesManager->gainLife(1);
 }

@@ -24,7 +24,8 @@ class GameManager {
         int score = 0;
         LivesManager livesManager;
         PowerUpManager powerUpManager;
-        const string title = "Pong - Seif Khalfia";
+        const string title = "Simple Pong - Seif Khalifa";
+        const string reset = "Game Over! Press space bar to play again.";
         void drawTimer();
 
         //game env - paddle

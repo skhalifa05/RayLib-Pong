@@ -42,3 +42,7 @@ void PowerUpManager::drawPowerUps() {
 std::vector<std::unique_ptr<PowerUp>>& PowerUpManager::getActivePowerUps() {
     return activePowerUps;
 }
+
+void PowerUpManager::reset() {
+    activePowerUps.clear();
+}

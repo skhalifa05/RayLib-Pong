@@ -11,12 +11,15 @@ class LivesManager {
     private:
         int lives = 0;
         const int distancebetweenLives = 20;
+
     public:
         LivesManager(int lives);
         void loseLife();
         void draw();
         bool dead();
-        void gainLife();
+        void gainLife(int count);
+        void update();
+
 };
 
 
