@@ -6,6 +6,7 @@
 
 #include <iostream>
 #include <ostream>
+#include <thread>
 #include <../include/raylib.h>
 
 Paddle::Paddle(float center, float yCoordinates, float paddleSpeed, float width, float height) {
@@ -37,9 +38,38 @@ pair<float, float> Paddle::getLocation() {
 }
 
 void Paddle::increaseSize() {
-    this->width += 20;
+    if (!powerUp) {
+        this->width += 40;
+        powerUp = true;
+        running = true;
+        startTime = std::chrono::steady_clock::now();
+
+        // Start a single background timer if not running
+        powerUpThread = std::thread([this]() {
+            while (running) {
+                std::this_thread::sleep_for(std::chrono::seconds(1));
+
+                if (--timeRemaining <= 0) {
+                    width -= 40;
+                    powerUp = false;
+                    running = false;
+                }
+            }
+        });
+        powerUpThread.detach(); // Allow independent execution
+    }
+    // Extend power-up duration
+    timeRemaining += 10;
 }
 
 float Paddle::getWidth() {
     return this->width;
+}
+
+bool Paddle::isPoweredUp() {
+    return this->powerUp;
+}
+
+int Paddle::getRemainingPowerUpTime() const {
+    return (powerUp) ? timeRemaining.load() : 0;
 }

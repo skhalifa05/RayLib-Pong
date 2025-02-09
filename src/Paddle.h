@@ -4,6 +4,9 @@
 
 #ifndef PADDLE_H
 #define PADDLE_H
+#include <chrono>
+#include <ctime>
+#include <thread>
 #include <utility>
 
 using namespace std;
@@ -16,9 +19,16 @@ class Paddle {
         pair<float, float> getLocation();
         void increaseSize();
         float getWidth();
+        bool isPoweredUp();
+        int getRemainingPowerUpTime() const;
 
     private:
         float x, y, paddleSpeed, width, height;
+    std::atomic<bool> powerUp{false}; // Ensures thread safety
+    std::atomic<int> timeRemaining{0};
+    std::chrono::steady_clock::time_point startTime;
+    std::thread powerUpThread;
+    std::atomic<bool> running{false}; // Track if the timer is running
 
 };
 

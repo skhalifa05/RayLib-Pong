@@ -24,8 +24,9 @@ class GameManager {
         int score = 0;
         LivesManager livesManager;
         PowerUpManager powerUpManager;
-
         const string title = "Bouncing Ball - Seif Khalfia";
+        void drawTimer();
+
         //game env - paddle
         const int paddleWidth;
         const int paddleHeight;

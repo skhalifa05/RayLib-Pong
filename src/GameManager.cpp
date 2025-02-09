@@ -83,6 +83,7 @@ void GameManager::powerUpCollision() {
             }
     }
 }
+
 //update
 void GameManager::updateFrame() {
     ball.update();
@@ -95,6 +96,14 @@ void GameManager::spawnRandomPowerUp() {
     powerUpManager.spawnPowerUp();
 }
 
+//timer
+void GameManager::drawTimer() {
+    if (paddle.isPoweredUp()) {
+        DrawText(std::to_string(paddle.getRemainingPowerUpTime()).c_str(), (screenWidth/2) - 20, screenHeight - 40, 30, RED);
+    }
+}
+
+
 //draw
 void GameManager::drawGame() {
     ClearBackground(color ? RAYWHITE : BLACK);
@@ -103,5 +112,6 @@ void GameManager::drawGame() {
     paddle.draw();
     livesManager.draw();
     powerUpManager.drawPowerUps();
+    drawTimer();
     DrawText(std::to_string(score).c_str(), 15, 20, 30, GRAY);
 }
