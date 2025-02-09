@@ -51,7 +51,7 @@ void Ball::ceilingBounce() {
 
 void Ball::paddleBounce(float speedMultiplier, float maxSpeed) {
     color = 1 - color;
-    xSpeed *= -speedMultiplier;
+    xSpeed *= speedMultiplier;
     ySpeed *= -speedMultiplier;
 
     // Cap speed
