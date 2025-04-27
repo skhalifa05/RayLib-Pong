@@ -18,6 +18,7 @@ public:
 
     std::pair<float, float> getLocation() override;
     void execute() override;
+    void setLocation(float x, float y) override;
 };
 
 #endif // LARGERPADDLE_H

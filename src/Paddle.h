@@ -18,17 +18,18 @@ class Paddle {
         void draw();
         pair<float, float> getLocation();
         void increaseSize();
+        void decreaseSize();
         float getWidth();
         bool isPoweredUp();
         int getRemainingPowerUpTime() const;
 
     private:
         float x, y, paddleSpeed, width, height;
-    std::atomic<bool> powerUp{false}; // Ensures thread safety
-    std::atomic<int> timeRemaining{0};
-    std::chrono::steady_clock::time_point startTime;
-    std::thread powerUpThread;
-    std::atomic<bool> running{false}; // Track if the timer is running
+        std::atomic<bool> powerUp{false}; // Ensures thread safety
+        std::atomic<int> timeRemaining{0};
+        std::chrono::steady_clock::time_point startTime;
+        std::thread powerUpThread;
+        std::atomic<bool> running{false}; // Track if the timer is running
 
 };
 

@@ -51,56 +51,112 @@ build cmake_object_order_depends_target_Pong: phony || .
 
 build CMakeFiles/Pong.dir/src/main.cpp.o: CXX_COMPILER__Pong_unscanned_Debug /Users/seifkhalifa/Documents/Uni/W2025$ Courses/Video$ Game$ Arch/Pong/src/main.cpp || cmake_object_order_depends_target_Pong
   DEP_FILE = CMakeFiles/Pong.dir/src/main.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
   INCLUDES = -I"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong/include"
   OBJECT_DIR = CMakeFiles/Pong.dir
   OBJECT_FILE_DIR = CMakeFiles/Pong.dir/src
 
 build CMakeFiles/Pong.dir/src/Ball.cpp.o: CXX_COMPILER__Pong_unscanned_Debug /Users/seifkhalifa/Documents/Uni/W2025$ Courses/Video$ Game$ Arch/Pong/src/Ball.cpp || cmake_object_order_depends_target_Pong
   DEP_FILE = CMakeFiles/Pong.dir/src/Ball.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
   INCLUDES = -I"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong/include"
   OBJECT_DIR = CMakeFiles/Pong.dir
   OBJECT_FILE_DIR = CMakeFiles/Pong.dir/src
 
 build CMakeFiles/Pong.dir/src/Paddle.cpp.o: CXX_COMPILER__Pong_unscanned_Debug /Users/seifkhalifa/Documents/Uni/W2025$ Courses/Video$ Game$ Arch/Pong/src/Paddle.cpp || cmake_object_order_depends_target_Pong
   DEP_FILE = CMakeFiles/Pong.dir/src/Paddle.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
   INCLUDES = -I"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong/include"
   OBJECT_DIR = CMakeFiles/Pong.dir
   OBJECT_FILE_DIR = CMakeFiles/Pong.dir/src
 
 build CMakeFiles/Pong.dir/src/GameManager.cpp.o: CXX_COMPILER__Pong_unscanned_Debug /Users/seifkhalifa/Documents/Uni/W2025$ Courses/Video$ Game$ Arch/Pong/src/GameManager.cpp || cmake_object_order_depends_target_Pong
   DEP_FILE = CMakeFiles/Pong.dir/src/GameManager.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
   INCLUDES = -I"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong/include"
   OBJECT_DIR = CMakeFiles/Pong.dir
   OBJECT_FILE_DIR = CMakeFiles/Pong.dir/src
 
 build CMakeFiles/Pong.dir/src/LivesManager.cpp.o: CXX_COMPILER__Pong_unscanned_Debug /Users/seifkhalifa/Documents/Uni/W2025$ Courses/Video$ Game$ Arch/Pong/src/LivesManager.cpp || cmake_object_order_depends_target_Pong
   DEP_FILE = CMakeFiles/Pong.dir/src/LivesManager.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
   INCLUDES = -I"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong/include"
   OBJECT_DIR = CMakeFiles/Pong.dir
   OBJECT_FILE_DIR = CMakeFiles/Pong.dir/src
 
 build CMakeFiles/Pong.dir/src/PowerUpsManager.cpp.o: CXX_COMPILER__Pong_unscanned_Debug /Users/seifkhalifa/Documents/Uni/W2025$ Courses/Video$ Game$ Arch/Pong/src/PowerUpsManager.cpp || cmake_object_order_depends_target_Pong
   DEP_FILE = CMakeFiles/Pong.dir/src/PowerUpsManager.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
   INCLUDES = -I"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong/include"
   OBJECT_DIR = CMakeFiles/Pong.dir
   OBJECT_FILE_DIR = CMakeFiles/Pong.dir/src
 
 build CMakeFiles/Pong.dir/src/PowerUps/LargerPaddle.cpp.o: CXX_COMPILER__Pong_unscanned_Debug /Users/seifkhalifa/Documents/Uni/W2025$ Courses/Video$ Game$ Arch/Pong/src/PowerUps/LargerPaddle.cpp || cmake_object_order_depends_target_Pong
   DEP_FILE = CMakeFiles/Pong.dir/src/PowerUps/LargerPaddle.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
   INCLUDES = -I"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong/include"
   OBJECT_DIR = CMakeFiles/Pong.dir
   OBJECT_FILE_DIR = CMakeFiles/Pong.dir/src/PowerUps
 
 build CMakeFiles/Pong.dir/src/PowerUps/ExtraLife.cpp.o: CXX_COMPILER__Pong_unscanned_Debug /Users/seifkhalifa/Documents/Uni/W2025$ Courses/Video$ Game$ Arch/Pong/src/PowerUps/ExtraLife.cpp || cmake_object_order_depends_target_Pong
   DEP_FILE = CMakeFiles/Pong.dir/src/PowerUps/ExtraLife.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
+  INCLUDES = -I"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong/include"
+  OBJECT_DIR = CMakeFiles/Pong.dir
+  OBJECT_FILE_DIR = CMakeFiles/Pong.dir/src/PowerUps
+
+build CMakeFiles/Pong.dir/src/Bricks/Brick.cpp.o: CXX_COMPILER__Pong_unscanned_Debug /Users/seifkhalifa/Documents/Uni/W2025$ Courses/Video$ Game$ Arch/Pong/src/Bricks/Brick.cpp || cmake_object_order_depends_target_Pong
+  DEP_FILE = CMakeFiles/Pong.dir/src/Bricks/Brick.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
+  INCLUDES = -I"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong/include"
+  OBJECT_DIR = CMakeFiles/Pong.dir
+  OBJECT_FILE_DIR = CMakeFiles/Pong.dir/src/Bricks
+
+build CMakeFiles/Pong.dir/src/Bricks/StandardBrick.cpp.o: CXX_COMPILER__Pong_unscanned_Debug /Users/seifkhalifa/Documents/Uni/W2025$ Courses/Video$ Game$ Arch/Pong/src/Bricks/StandardBrick.cpp || cmake_object_order_depends_target_Pong
+  DEP_FILE = CMakeFiles/Pong.dir/src/Bricks/StandardBrick.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
+  INCLUDES = -I"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong/include"
+  OBJECT_DIR = CMakeFiles/Pong.dir
+  OBJECT_FILE_DIR = CMakeFiles/Pong.dir/src/Bricks
+
+build CMakeFiles/Pong.dir/src/Bricks/DurableBrick.cpp.o: CXX_COMPILER__Pong_unscanned_Debug /Users/seifkhalifa/Documents/Uni/W2025$ Courses/Video$ Game$ Arch/Pong/src/Bricks/DurableBrick.cpp || cmake_object_order_depends_target_Pong
+  DEP_FILE = CMakeFiles/Pong.dir/src/Bricks/DurableBrick.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
+  INCLUDES = -I"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong/include"
+  OBJECT_DIR = CMakeFiles/Pong.dir
+  OBJECT_FILE_DIR = CMakeFiles/Pong.dir/src/Bricks
+
+build CMakeFiles/Pong.dir/src/Bricks/IndestructibleBrick.cpp.o: CXX_COMPILER__Pong_unscanned_Debug /Users/seifkhalifa/Documents/Uni/W2025$ Courses/Video$ Game$ Arch/Pong/src/Bricks/IndestructibleBrick.cpp || cmake_object_order_depends_target_Pong
+  DEP_FILE = CMakeFiles/Pong.dir/src/Bricks/IndestructibleBrick.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
+  INCLUDES = -I"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong/include"
+  OBJECT_DIR = CMakeFiles/Pong.dir
+  OBJECT_FILE_DIR = CMakeFiles/Pong.dir/src/Bricks
+
+build CMakeFiles/Pong.dir/src/Bricks/SpecialBrick.cpp.o: CXX_COMPILER__Pong_unscanned_Debug /Users/seifkhalifa/Documents/Uni/W2025$ Courses/Video$ Game$ Arch/Pong/src/Bricks/SpecialBrick.cpp || cmake_object_order_depends_target_Pong
+  DEP_FILE = CMakeFiles/Pong.dir/src/Bricks/SpecialBrick.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
+  INCLUDES = -I"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong/include"
+  OBJECT_DIR = CMakeFiles/Pong.dir
+  OBJECT_FILE_DIR = CMakeFiles/Pong.dir/src/Bricks
+
+build CMakeFiles/Pong.dir/src/Bricks/PowerUpBrick.cpp.o: CXX_COMPILER__Pong_unscanned_Debug /Users/seifkhalifa/Documents/Uni/W2025$ Courses/Video$ Game$ Arch/Pong/src/Bricks/PowerUpBrick.cpp || cmake_object_order_depends_target_Pong
+  DEP_FILE = CMakeFiles/Pong.dir/src/Bricks/PowerUpBrick.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
+  INCLUDES = -I"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong/include"
+  OBJECT_DIR = CMakeFiles/Pong.dir
+  OBJECT_FILE_DIR = CMakeFiles/Pong.dir/src/Bricks
+
+build CMakeFiles/Pong.dir/src/BrickManager.cpp.o: CXX_COMPILER__Pong_unscanned_Debug /Users/seifkhalifa/Documents/Uni/W2025$ Courses/Video$ Game$ Arch/Pong/src/BrickManager.cpp || cmake_object_order_depends_target_Pong
+  DEP_FILE = CMakeFiles/Pong.dir/src/BrickManager.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
+  INCLUDES = -I"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong/include"
+  OBJECT_DIR = CMakeFiles/Pong.dir
+  OBJECT_FILE_DIR = CMakeFiles/Pong.dir/src
+
+build CMakeFiles/Pong.dir/src/PowerUps/SmallPaddle.cpp.o: CXX_COMPILER__Pong_unscanned_Debug /Users/seifkhalifa/Documents/Uni/W2025$ Courses/Video$ Game$ Arch/Pong/src/PowerUps/SmallPaddle.cpp || cmake_object_order_depends_target_Pong
+  DEP_FILE = CMakeFiles/Pong.dir/src/PowerUps/SmallPaddle.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
   INCLUDES = -I"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong/include"
   OBJECT_DIR = CMakeFiles/Pong.dir
   OBJECT_FILE_DIR = CMakeFiles/Pong.dir/src/PowerUps
@@ -113,8 +169,8 @@ build CMakeFiles/Pong.dir/src/PowerUps/ExtraLife.cpp.o: CXX_COMPILER__Pong_unsca
 #############################################
 # Link the executable Pong
 
-build Pong: CXX_EXECUTABLE_LINKER__Pong_Debug CMakeFiles/Pong.dir/src/main.cpp.o CMakeFiles/Pong.dir/src/Ball.cpp.o CMakeFiles/Pong.dir/src/Paddle.cpp.o CMakeFiles/Pong.dir/src/GameManager.cpp.o CMakeFiles/Pong.dir/src/LivesManager.cpp.o CMakeFiles/Pong.dir/src/PowerUpsManager.cpp.o CMakeFiles/Pong.dir/src/PowerUps/LargerPaddle.cpp.o CMakeFiles/Pong.dir/src/PowerUps/ExtraLife.cpp.o | /Users/seifkhalifa/Documents/Uni/W2025$ Courses/Video$ Game$ Arch/Pong/lib/libraylib.a
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk
+build Pong: CXX_EXECUTABLE_LINKER__Pong_Debug CMakeFiles/Pong.dir/src/main.cpp.o CMakeFiles/Pong.dir/src/Ball.cpp.o CMakeFiles/Pong.dir/src/Paddle.cpp.o CMakeFiles/Pong.dir/src/GameManager.cpp.o CMakeFiles/Pong.dir/src/LivesManager.cpp.o CMakeFiles/Pong.dir/src/PowerUpsManager.cpp.o CMakeFiles/Pong.dir/src/PowerUps/LargerPaddle.cpp.o CMakeFiles/Pong.dir/src/PowerUps/ExtraLife.cpp.o CMakeFiles/Pong.dir/src/Bricks/Brick.cpp.o CMakeFiles/Pong.dir/src/Bricks/StandardBrick.cpp.o CMakeFiles/Pong.dir/src/Bricks/DurableBrick.cpp.o CMakeFiles/Pong.dir/src/Bricks/IndestructibleBrick.cpp.o CMakeFiles/Pong.dir/src/Bricks/SpecialBrick.cpp.o CMakeFiles/Pong.dir/src/Bricks/PowerUpBrick.cpp.o CMakeFiles/Pong.dir/src/BrickManager.cpp.o CMakeFiles/Pong.dir/src/PowerUps/SmallPaddle.cpp.o | /Users/seifkhalifa/Documents/Uni/W2025$ Courses/Video$ Game$ Arch/Pong/lib/libraylib.a
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk
   LINK_LIBRARIES = -Wl,-rpath,"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong/lib"  "/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong/lib/libraylib.a"  -framework CoreFoundation  -framework IOKit  -framework CoreGraphics  -framework AppKit
   LINK_PATH = -L"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong/lib"
   OBJECT_DIR = CMakeFiles/Pong.dir
@@ -128,7 +184,7 @@ build Pong: CXX_EXECUTABLE_LINKER__Pong_Debug CMakeFiles/Pong.dir/src/main.cpp.o
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong/cmake-build-debug" && /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd "/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong/cmake-build-debug" && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -139,7 +195,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong/cmake-build-debug" && /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake --regenerate-during-build -S"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong" -B"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong/cmake-build-debug"
+  COMMAND = cd "/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong/cmake-build-debug" && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake --regenerate-during-build -S"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong" -B"/Users/seifkhalifa/Documents/Uni/W2025 Courses/Video Game Arch/Pong/cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -166,14 +222,14 @@ build all: phony Pong
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCInformation.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCXXInformation.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/AppleClang-C.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/AppleClang-CXX.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Clang.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/GNU.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-AppleClang-C.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-AppleClang-CXX.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang-C.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang-CXX.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Darwin-Initialize.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Darwin.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/UnixPaths.cmake /Users/seifkhalifa/Documents/Uni/W2025$ Courses/Video$ Game$ Arch/Pong/CMakeLists.txt CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeCXXCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/UnixPaths.cmake /Users/seifkhalifa/Documents/Uni/W2025$ Courses/Video$ Game$ Arch/Pong/CMakeLists.txt CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeCXXCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCInformation.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCXXInformation.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/AppleClang-C.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/AppleClang-CXX.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Clang.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/GNU.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-AppleClang-C.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-AppleClang-CXX.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang-C.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang-CXX.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Darwin-Initialize.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Darwin.cmake /Users/seifkhalifa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/UnixPaths.cmake /Users/seifkhalifa/Documents/Uni/W2025$ Courses/Video$ Game$ Arch/Pong/CMakeLists.txt CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeCXXCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake: phony
+build /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/UnixPaths.cmake /Users/seifkhalifa/Documents/Uni/W2025$ Courses/Video$ Game$ Arch/Pong/CMakeLists.txt CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeCXXCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake: phony
 
 
 #############################################

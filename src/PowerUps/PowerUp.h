@@ -15,5 +15,7 @@ public:
 
     // Executes the power-up effect
     virtual void execute() = 0;
+
+    virtual void setLocation(float x, float y) = 0;
 };
 #endif //POWERUP_H

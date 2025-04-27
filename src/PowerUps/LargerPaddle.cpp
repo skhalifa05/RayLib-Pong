@@ -9,6 +9,11 @@ std::pair<float, float> LargerPaddle::getLocation() {
     return {x, y};
 }
 
+void LargerPaddle::setLocation(float newX, float newY) {
+    x = newX;
+    y = newY;
+}
+
 void LargerPaddle::execute() {
     paddle->increaseSize();  // Expands the paddle
 }

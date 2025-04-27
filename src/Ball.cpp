@@ -38,7 +38,10 @@ void Ball::reset() {
     srand(std::time(0));  // Seed random number generator
 
     x = rand() % GetScreenWidth();  // Any horizontal position
-    y = rand() % (GetScreenHeight() / 2);  // Only in the upper half
+//    y = rand() % (GetScreenHeight() / 2);  // Only in the upper half
+    int top = 200;
+    int bottom = GetScreenHeight() - 100;
+    y = top + (rand() % (bottom - top + 1));
 }
 
 void Ball::sideWallBounce() {
@@ -51,12 +54,12 @@ void Ball::ceilingBounce() {
 
 void Ball::paddleBounce(float speedMultiplier, float maxSpeed) {
     color = 1 - color;
-    xSpeed *= speedMultiplier;
-    ySpeed *= -speedMultiplier;
+    xSpeed *= 1;
+    ySpeed *= -1;
 
     // Cap speed
-    xSpeed = (std::abs(xSpeed) > maxSpeed) ? (maxSpeed * (xSpeed > 0 ? 1 : -1)) : xSpeed;
-    ySpeed = (std::abs(ySpeed) > maxSpeed) ? (maxSpeed * (ySpeed > 0 ? 1 : -1)) : ySpeed;
+//    xSpeed = (std::abs(xSpeed) > maxSpeed) ? (maxSpeed * (xSpeed > 0 ? 1 : -1)) : xSpeed;
+//    ySpeed = (std::abs(ySpeed) > maxSpeed) ? (maxSpeed * (ySpeed > 0 ? 1 : -1)) : ySpeed;
 }
 
 void Ball::completereset(float xSpeed, float ySpeed) {
@@ -64,6 +67,27 @@ void Ball::completereset(float xSpeed, float ySpeed) {
     this->ySpeed = ySpeed;
     srand(std::time(0));  // Seed random number generator
 
-    x = rand() % GetScreenWidth();  // Any horizontal position
-    y = rand() % (GetScreenHeight() / 2);  // Only in the upper half
+    x = rand() % GetScreenWidth();  // Random horizontal position
+
+    int top = 250;
+    int bottom = GetScreenHeight() - 100;
+    y = top + (rand() % (bottom - top + 1));
+}
+
+void Ball::setLocation(float newX, float newY) {
+    this->x = newX;
+    this->y = newY;
+}
+
+float Ball::getSpeedX() const {
+    return xSpeed;
+}
+
+float Ball::getSpeedY() const {
+    return ySpeed;
+}
+
+void Ball::setSpeed(float newXSpeed, float newYSpeed) {
+    this->xSpeed = newXSpeed;
+    this->ySpeed = newYSpeed;
 }

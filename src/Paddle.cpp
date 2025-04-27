@@ -58,6 +58,31 @@ void Paddle::increaseSize() {
     timeRemaining += 10;
 }
 
+void Paddle::decreaseSize() {
+    if (!powerUp) {
+        this->width -= 40;
+        powerUp = true;
+        running = true;
+        startTime = std::chrono::steady_clock::now();
+
+        // Start a single background timer if not running
+        powerUpThread = std::thread([this]() {
+            while (running) {
+                std::this_thread::sleep_for(std::chrono::seconds(1));
+
+                if (--timeRemaining <= 0) {
+                    width += 40;
+                    powerUp = false;
+                    running = false;
+                }
+            }
+        });
+        powerUpThread.detach(); // Allow independent execution
+    }
+    // Extend power-up duration
+    timeRemaining += 10;
+}
+
 float Paddle::getWidth() {
     return this->width;
 }

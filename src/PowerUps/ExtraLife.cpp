@@ -10,6 +10,11 @@ std::pair<float, float> ExtraLife::getLocation() {
     return {x, y};
 }
 
+void ExtraLife::setLocation(float newX, float newY) {
+    x = newX;
+    y = newY;
+}
+
 void ExtraLife::execute() {
     livesManager->gainLife(1);
 }

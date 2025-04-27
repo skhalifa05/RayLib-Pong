@@ -10,16 +10,13 @@ PowerUpManager::PowerUpManager(Paddle* paddle, Ball* ball, LivesManager* livesMa
     srand(static_cast<unsigned>(time(0)));  // Seed randomness
 }
 
-void PowerUpManager::spawnPowerUp() {
-    float x = rand() % GetScreenWidth();
-    float y = 400;
-
+void PowerUpManager::spawnPowerUp(float startX, float startY) {
     int type = rand() % 2;
     std::unique_ptr<PowerUp> powerUp;
 
     switch (type) {
-        case 0: powerUp = std::make_unique<LargerPaddle>(x, y, paddle); break;
-        case 1: powerUp = std::make_unique<ExtraLife>(x, y, livesManager); break;
+        case 0: powerUp = std::make_unique<LargerPaddle>(startX, startY, paddle); break;
+        case 1: powerUp = std::make_unique<ExtraLife>(startX, startY, livesManager); break;
     }
 
     activePowerUps.push_back(std::move(powerUp));
@@ -33,9 +30,20 @@ void PowerUpManager::executePowerUp(int index) {
 }
 
 void PowerUpManager::drawPowerUps() {
-    for (const auto& powerUp : activePowerUps) {
+    for (int i = 0; i < activePowerUps.size();) {
+        auto& powerUp = activePowerUps[i];
         auto [x, y] = powerUp->getLocation();
-        DrawCircle(x, y, 10, GREEN);  // Power-ups appear as green circles
+
+        y += 2.0f; // Fall speed
+        powerUp->setLocation(x, y);
+
+        DrawCircle(x, y, 10, GREEN);
+
+        if (y > GetScreenHeight()) {
+            activePowerUps.erase(activePowerUps.begin() + i);
+        } else {
+            ++i;
+        }
     }
 }
 
@@ -45,4 +53,21 @@ std::vector<std::unique_ptr<PowerUp>>& PowerUpManager::getActivePowerUps() {
 
 void PowerUpManager::reset() {
     activePowerUps.clear();
+}
+
+void PowerUpManager::spawnAndExecuteRandomPowerUp() {
+    float x = rand() % GetScreenWidth();
+    float y = 400;
+
+    int type = rand() % 2;
+    std::unique_ptr<PowerUp> powerUp;
+
+    switch (type) {
+        case 0: powerUp = std::make_unique<LargerPaddle>(x, y, paddle); break;
+        case 1: powerUp = std::make_unique<ExtraLife>(x, y, livesManager); break;
+    }
+
+    if (powerUp) {
+        powerUp->execute();
+    }
 }

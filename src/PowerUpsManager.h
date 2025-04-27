@@ -27,10 +27,11 @@ private:
 public:
     PowerUpManager(Paddle* paddle, Ball* ball, LivesManager* livesManager);
 
-    void spawnPowerUp();
+    void spawnPowerUp(float startX, float startY);
     void executePowerUp(int index);
     void drawPowerUps();  // To display them on the screen
     void reset();
+    void spawnAndExecuteRandomPowerUp();
     std::vector<std::unique_ptr<PowerUp>>& getActivePowerUps();
 };
 

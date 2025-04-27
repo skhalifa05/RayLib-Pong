@@ -12,6 +12,7 @@
 #include "LivesManager.h"
 #include "Paddle.h"
 #include "PowerUpsManager.h"
+#include "BrickManager.h"
 
 class GameManager {
     private:
@@ -22,6 +23,7 @@ class GameManager {
         const int livesCount = 3;
         bool color = 1;
         int score = 0;
+        int level = 1;
         LivesManager livesManager;
         PowerUpManager powerUpManager;
         const string title = "Simple Pong - Seif Khalifa";
@@ -43,7 +45,15 @@ class GameManager {
         const int FPS = 60;
         const float speedMultiplier = 1.15f; // Increase speed by 5% each bounce
         const float maxSpeed = 10.0f; // Prevent excessive speed
+        bool ballAttached = true;
         Ball ball;
+
+        //game env - bricks
+        BrickManager brickManager;
+
+        //game env - data
+        int loadHighScore();
+        void saveHighScore(float score);
 
         GameManager();
         void collider();

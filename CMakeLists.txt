@@ -28,7 +28,24 @@ add_executable(Pong src/main.cpp
         src/PowerUps/LargerPaddle.h
         src/PowerUps/ExtraLife.h
         src/PowerUps/LargerPaddle.cpp
-        src/PowerUps/ExtraLife.cpp)
+        src/PowerUps/ExtraLife.cpp
+        src/Bricks/Brick.cpp
+        src/Bricks/Brick.h
+        src/Bricks/StandardBrick.cpp
+        src/Bricks/StandardBrick.h
+        src/Bricks/DurableBrick.cpp
+        src/Bricks/DurableBrick.h
+        src/Bricks/IndestructibleBrick.cpp
+        src/Bricks/IndestructibleBrick.h
+        src/Bricks/SpecialBrick.cpp
+        src/Bricks/SpecialBrick.h
+        src/Bricks/PowerUpBrick.cpp
+        src/Bricks/PowerUpBrick.h
+        src/BrickManager.cpp
+        src/BrickManager.h
+        src/PowerUps/SmallPaddle.cpp
+        src/PowerUps/SmallPaddle.h
+)
 
 # Link libraries
 if (LIBS)

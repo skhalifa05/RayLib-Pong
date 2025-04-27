@@ -20,6 +20,10 @@ class Ball {
         void ceilingBounce();
         void reset();
         void completereset(float xSpeed, float ySpeed);
+        void setLocation(float newX, float newY);
+        float getSpeedX() const;
+        float getSpeedY() const;
+        void setSpeed(float newXSpeed, float newYSpeed);
 
     private:
         float x,y, xSpeed, ySpeed, radius;

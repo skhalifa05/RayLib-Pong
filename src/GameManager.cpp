@@ -2,8 +2,10 @@
 // Created by Seif Khalifa on 08/02/2025.
 //
 
-#include "GameManager.h"
 
+#include "GameManager.h"
+#include "raylib.h"
+#include <fstream>
 #include <iostream>
 #include <ostream>
 
@@ -17,9 +19,11 @@ GameManager::GameManager():
     ballRadius(10), xSpeed(3),
     ySpeed(2), radius(10),
     ball(xSpeed, ySpeed, radius, screenHeight, screenWidth),
+    ballAttached(true),
     paddle((screenWidth / 2) - (paddleWidth / 2), paddleY, paddleSpeed, paddleWidth, paddleHeight),
     livesManager(livesCount),
-    powerUpManager(&paddle, &ball, &livesManager){}
+    powerUpManager(&paddle, &ball, &livesManager),
+    brickManager(&powerUpManager, &ball){}
 
 // Singleton instance method
 GameManager* GameManager::getInstance() {
@@ -33,6 +37,7 @@ GameManager* GameManager::getInstance() {
 void GameManager::initGame() {
     InitWindow(screenWidth, screenHeight, title.c_str());
     SetTargetFPS(FPS);               // Set our game to run at 60 frames-per-second
+    brickManager.initBricks();
 }
 
 //collision check + score tracker
@@ -45,14 +50,13 @@ void GameManager::collider() {
              (ballY - ballRadius <= paddleY + paddleHeight);  // Ball's top edge before paddle's bottom edge
 
     if (paddleCollision) {
-        score++;
         ball.paddleBounce(speedMultiplier, maxSpeed);
         color = 1 - color;
         // --- Random power-up spawn with 10% probability ---
         int chance = rand() % 100;  // Generates a number between 0-99
-        if (chance < 30) {  // 30% chance
-            spawnRandomPowerUp();
-        }
+//        if (chance < 30) {  // 30% chance
+//            spawnRandomPowerUp();
+//        }
         return;
     }
 
@@ -86,20 +90,40 @@ void GameManager::powerUpCollision() {
 
 //update
 void GameManager::updateFrame() {
+    if (ballAttached) {
+        auto [paddleX, paddleY] = paddle.getLocation();
+        ball.setLocation(paddleX + paddle.getWidth() / 2, paddleY - ballRadius);
+
+        if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON) || IsKeyPressed(KEY_SPACE)) {
+            ballAttached = false;
+            ball.setSpeed(ball.getSpeedX(), -abs(ball.getSpeedY()));
+        }
+        paddle.update();
+        return;
+    }
+
+
     ball.update();
     paddle.update();
     if (livesManager.dead()) {
+        int highScore = loadHighScore();
+        if (score > highScore) {
+            saveHighScore(score);
+        }
         this->score = 0;
         powerUpManager.reset();
         ball.completereset(xSpeed, ySpeed);
+        brickManager.initBricks();
     }
     livesManager.update();
+    brickManager.updateBricks(ball, score, ballRadius, level);
     collider();
     powerUpCollision();
 }
 
 void GameManager::spawnRandomPowerUp() {
-    powerUpManager.spawnPowerUp();
+//    powerUpManager.spawnPowerUp();
+    return;
 }
 
 //timer
@@ -108,7 +132,6 @@ void GameManager::drawTimer() {
         DrawText(std::to_string(paddle.getRemainingPowerUpTime()).c_str(), (screenWidth/2) - 20, screenHeight - 30, 30, RED);
     }
 }
-
 
 //draw
 void GameManager::drawGame() {
@@ -119,6 +142,29 @@ void GameManager::drawGame() {
     paddle.draw();
     livesManager.draw();
     powerUpManager.drawPowerUps();
+    brickManager.drawBricks();
     drawTimer();
     DrawText(std::to_string(score).c_str(), 15, 20, 30, GRAY);
+    std::string levelText = "Level: " + std::to_string(level);
+    DrawText(levelText.c_str(), 360, 10, 30, GRAY);
+    std::string highScoreText = "High Score: " + std::to_string(loadHighScore());
+    DrawText(highScoreText.c_str(), 15, 400, 30, GRAY);
+}
+
+int GameManager::loadHighScore() {
+    std::ifstream file("highscore.dat");
+    int highScore = 0;
+    if (file.is_open()) {
+        file >> highScore;
+        file.close();
+    }
+    return highScore;
+}
+
+void GameManager::saveHighScore(float score) {
+    std::ofstream file("highscore.dat");
+    if (file.is_open()) {
+        file << score;
+        file.close();
+    }
 }
