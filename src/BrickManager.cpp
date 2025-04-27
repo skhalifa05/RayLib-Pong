@@ -62,20 +62,20 @@ void BrickManager::updateBricks(Ball& ball, int& score, float ballRadius, int& l
                 comboCount++;
                 comboTimer = COMBO_RESET_TIME;
 
-                int comboMultiplier = (comboCount > 0) ? comboCount : 1;
+//                int comboMultiplier = (comboCount > 0) ? comboCount : 1;
 
                 if (dynamic_cast<PowerUpBrick*>(brick)) {
-                    score += 2 * comboMultiplier;
+                    score += 2;
                     spawnPowerup(brick->GetX(), brick->GetY());
                 } else if (dynamic_cast<SpecialBrick*>(brick)) {
-                    score += 3 * comboMultiplier;
+                    score += 3;
                     powerupsystem->spawnAndExecuteRandomPowerUp();
                 } else if (dynamic_cast<IndestructibleBrick*>(brick)) {
                     score += 0;
                 } else if (dynamic_cast<DurableBrick*>(brick)) {
-                    score += 4 * comboMultiplier;
+                    score += 4;
                 } else if (dynamic_cast<StandardBrick*>(brick)) {
-                    score += 1 * comboMultiplier;
+                    score += 1;
                 }
 
                 // Add combo bonus
