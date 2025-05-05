@@ -21,8 +21,8 @@ void Paddle::update() {
     if (IsKeyDown(KEY_RIGHT)) x += paddleSpeed;
     if (IsKeyDown(KEY_LEFT)) x -= paddleSpeed;
     // Screen wrapping logic
-    if (x > GetScreenWidth()) x = 0;  // If the paddle exits the right side, re-enter from the left
-    if (x < 0) x = GetScreenWidth();  // If the paddle exits the left side, re-enter from the right
+    if (x < 0) x = 0;
+    if (x + width > GetScreenWidth()) x = GetScreenWidth() - width;
 }
 
 void Paddle::draw() {

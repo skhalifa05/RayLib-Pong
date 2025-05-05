@@ -49,7 +49,7 @@ void GameManager::collider() {
              (ballY + ballRadius >= paddleY) &&  // Ball's bottom edge past paddle's top edge
              (ballY - ballRadius <= paddleY + paddleHeight);  // Ball's top edge before paddle's bottom edge
 
-    if (paddleCollision) {
+    if (paddleCollision && ball.getSpeedY() > 0) {
         ball.paddleBounce(speedMultiplier, maxSpeed);
         color = 1 - color;
         // --- Random power-up spawn with 10% probability ---

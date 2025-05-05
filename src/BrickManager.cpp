@@ -129,6 +129,7 @@ void BrickManager::updateBricks(Ball& ball, int& score, float ballRadius, int& l
         // Reset the bricks for the next level
         initBricks();
         ball.completereset(3, 2);
+        level++;
     }
 }
 

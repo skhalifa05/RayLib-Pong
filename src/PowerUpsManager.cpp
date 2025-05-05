@@ -11,12 +11,13 @@ PowerUpManager::PowerUpManager(Paddle* paddle, Ball* ball, LivesManager* livesMa
 }
 
 void PowerUpManager::spawnPowerUp(float startX, float startY) {
-    int type = rand() % 2;
+    int type = rand() % 3;
     std::unique_ptr<PowerUp> powerUp;
 
     switch (type) {
         case 0: powerUp = std::make_unique<LargerPaddle>(startX, startY, paddle); break;
         case 1: powerUp = std::make_unique<ExtraLife>(startX, startY, livesManager); break;
+        case 2: powerUp = std::make_unique<SmallPaddle>(startX, startY, paddle); break;
     }
 
     activePowerUps.push_back(std::move(powerUp));
@@ -59,12 +60,13 @@ void PowerUpManager::spawnAndExecuteRandomPowerUp() {
     float x = rand() % GetScreenWidth();
     float y = 400;
 
-    int type = rand() % 2;
+    int type = rand() % 3;
     std::unique_ptr<PowerUp> powerUp;
 
     switch (type) {
         case 0: powerUp = std::make_unique<LargerPaddle>(x, y, paddle); break;
         case 1: powerUp = std::make_unique<ExtraLife>(x, y, livesManager); break;
+        case 2: powerUp = std::make_unique<SmallPaddle>(x, y, paddle); break;
     }
 
     if (powerUp) {

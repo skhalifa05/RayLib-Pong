@@ -13,6 +13,7 @@
 #include "PowerUps/PowerUp.h"
 #include "PowerUps/LargerPaddle.h"
 #include "PowerUps/ExtraLife.h"
+#include "PowerUps/SmallPaddle.h"
 #include "Paddle.h"
 #include "Ball.h"
 #include "LivesManager.h"
