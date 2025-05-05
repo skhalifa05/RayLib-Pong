@@ -18,7 +18,7 @@ private:
     // Combo system
     float comboTimer = 0.0f;
     int comboCount = 0;
-    const float COMBO_RESET_TIME = 2.0f; // seconds
+    const float COMBO_RESET_TIME = 7.0f; // seconds
 
     // Level clear timer
     float levelTimer = 0.0f;
@@ -29,6 +29,11 @@ public:
     void initBricks();
     void updateBricks(Ball& ball, int& score, float ballRadius, int& level);
     void drawBricks();
+
+    // Getter functions
+    float getComboTimer() const { return comboTimer; }
+    int getComboCount() const { return comboCount; }
+    float getLevelTimer() const { return levelTimer; }
 };
 
 

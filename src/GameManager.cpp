@@ -144,11 +144,28 @@ void GameManager::drawGame() {
     powerUpManager.drawPowerUps();
     brickManager.drawBricks();
     drawTimer();
+
+
     DrawText(std::to_string(score).c_str(), 15, 20, 30, GRAY);
     std::string levelText = "Level: " + std::to_string(level);
     DrawText(levelText.c_str(), 360, 10, 30, GRAY);
     std::string highScoreText = "High Score: " + std::to_string(loadHighScore());
     DrawText(highScoreText.c_str(), 15, 400, 30, GRAY);
+
+    // Always draw level timer
+    std::string levelTimerText = "Time: " + std::to_string(static_cast<int>(brickManager.getLevelTimer()));
+    DrawText(levelTimerText.c_str(), 600, 370, 20, SKYBLUE);
+    // Draw combo timer if combo is active
+    if (brickManager.getComboCount() > 0) {
+        std::string comboText = "Combo Time: " + std::to_string(static_cast<int>(brickManager.getComboTimer()));
+        DrawText(comboText.c_str(), 600, 410, 20, ORANGE);
+    } else {
+        DrawText("Combo Time: N/A", 600, 410, 20, ORANGE);
+    }
+
+    std::string comboCountText = "Combo Count: " + std::to_string(brickManager.getComboCount());
+    DrawText(comboCountText.c_str(), 600, 390, 20, ORANGE);
+
 }
 
 int GameManager::loadHighScore() {

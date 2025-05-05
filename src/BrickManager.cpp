@@ -118,3 +118,5 @@ void BrickManager::drawBricks() {
         brick->draw();
     }
 }
+
+
