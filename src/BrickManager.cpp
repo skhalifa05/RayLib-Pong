@@ -10,6 +10,13 @@
 #include "Bricks/PowerUpBrick.h"
 #include <raylib.h>
 
+struct FloatingText {
+    std::string text;
+    float x, y;
+    float timer; // how long it stays on screen
+};
+std::vector<FloatingText> floatingTexts;
+
 BrickManager::BrickManager(PowerUpManager* powerupsystem, Ball* ball) : powerupsystem(powerupsystem), ball(ball) {}
 
 BrickManager::~BrickManager() {
@@ -66,25 +73,41 @@ void BrickManager::updateBricks(Ball& ball, int& score, float ballRadius, int& l
 
                 if (dynamic_cast<PowerUpBrick*>(brick)) {
                     score += 2;
+                    floatingTexts.push_back({"+2", brick->GetX(), brick->GetY(), 1.0f});
                     spawnPowerup(brick->GetX(), brick->GetY());
                 } else if (dynamic_cast<SpecialBrick*>(brick)) {
                     score += 3;
+                    floatingTexts.push_back({"+3", brick->GetX(), brick->GetY(), 1.0f});
                     powerupsystem->spawnAndExecuteRandomPowerUp();
                 } else if (dynamic_cast<IndestructibleBrick*>(brick)) {
                     score += 0;
                 } else if (dynamic_cast<DurableBrick*>(brick)) {
                     score += 4;
+                    floatingTexts.push_back({"+4", brick->GetX(), brick->GetY(), 1.0f});
                 } else if (dynamic_cast<StandardBrick*>(brick)) {
                     score += 1;
+                    floatingTexts.push_back({"+1", brick->GetX(), brick->GetY(), 1.0f});
                 }
 
                 // Add combo bonus
-                score += comboCount * 2; // Bonus increases with each combo
-
+                if (comboCount *2 != 0 && comboCount != 1){
+                    score += comboCount * 2; // Bonus increases with each combo
+                    int c = comboCount*2;
+                    floatingTexts.push_back({"+" + std::to_string(c) + " Combo", 260, 220, 1.0f});
+                }
             }
-
             ball.ceilingBounce();
             break; // Only one collision per frame
+        }
+    }
+
+    for (auto it = floatingTexts.begin(); it != floatingTexts.end();) {
+        DrawText(it->text.c_str(), it->x, it->y, 20, RED);
+        it->timer -= GetFrameTime();
+        if (it->timer <= 0.0f) {
+            it = floatingTexts.erase(it); // remove expired text
+        } else {
+            ++it;
         }
     }
 
@@ -118,5 +141,4 @@ void BrickManager::drawBricks() {
         brick->draw();
     }
 }
-
 

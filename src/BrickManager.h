@@ -18,7 +18,7 @@ private:
     // Combo system
     float comboTimer = 0.0f;
     int comboCount = 0;
-    const float COMBO_RESET_TIME = 7.0f; // seconds
+    const float COMBO_RESET_TIME = 5.0f; // seconds
 
     // Level clear timer
     float levelTimer = 0.0f;

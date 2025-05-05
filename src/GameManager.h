@@ -26,7 +26,7 @@ class GameManager {
         int level = 1;
         LivesManager livesManager;
         PowerUpManager powerUpManager;
-        const string title = "Simple Pong - Seif Khalifa";
+        const string title = "Brick Breaker Deluxe";
         const string reset = "Game Over! Press space bar to play again.";
         void drawTimer();
 
